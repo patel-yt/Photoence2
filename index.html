@@ -1,0 +1,52 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photoence | Enhance Your Photos</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Optionally include advanced libraries if needed -->
+  <!-- <script async src="https://docs.opencv.org/3.4/opencv.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script> -->
+</head>
+<body>
+  <header>
+    <h1>Photoence</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="upload-section">
+      <h2>Enhance Your Photo</h2>
+      <input type="file" id="photoUpload" accept="image/*">
+      <div id="controls">
+        <label for="brightnessSlider">Brightness</label>
+        <input type="range" id="brightnessSlider" min="-100" max="100" value="20">
+        <label for="contrastSlider">Contrast</label>
+        <input type="range" id="contrastSlider" min="0" max="3" step="0.1" value="1.1">
+      </div>
+      <div id="action-buttons">
+        <button id="previewBtn">Preview Adjustments</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </section>
+
+    <section id="preview-section">
+      <canvas id="photoCanvas"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Photoence. All Rights Reserved.</p>
+  </footer>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
